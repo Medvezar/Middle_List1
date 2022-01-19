@@ -93,8 +93,9 @@ void ft_odd_even_analysis_lst(const vector <long double>& vect) {
 
 
 
-
+/*
 int main() {
     vect <long double> vect = { 0, 2, 5, 3, 2, 1 };
     cout << ft_odd_even_analysis_lst(vect) << endl;
 }
+*/
