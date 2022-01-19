@@ -53,7 +53,7 @@ string ft_rmstrchar(string str, string str2){
 }
 
 
-long long ft_sumlst(const vector <int> &vect){
+long double ft_sumlst(const vector <int> &vect){
     long long numRes = 0;
     for (int n1 = 0; n1 < vect.size(); n1++)
         numRes += vect[n1];
