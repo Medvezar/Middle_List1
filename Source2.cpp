@@ -13,6 +13,8 @@ long itc_sum_even_lst(const vector <int>& vect) {
 
 long itc_sum_even_part_lst(const vector <int>& vect) {
     long sumNum = 0;
+    if (vect.size() == 0)
+        return 0;
     for (int n1 = 0; n1 < vect.size(); n1++)
         if (vect[n1] % 2 == 0)
             sumNum += vect[n1];
