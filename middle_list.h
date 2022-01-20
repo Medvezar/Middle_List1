@@ -5,7 +5,7 @@
 using namespace std;
 
 
-vector <char> itc_strlist(string str);
+vector <char> itc_strtlist(string str);
 string itc_join(vector <char> vect, string sep);
 string itc_rmstrspc(string str);
 string itc_rmstrchar(string str, string str2);
