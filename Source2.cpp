@@ -4,7 +4,7 @@
 long itc_sum_even_lst(const vector <long>& vect) {
     long numRes = 0;
     for (int n1 = 0; n1 < vect.size(); n1++)
-        if ((n1 + 1) % 2 == 0)
+        if (n1 % 2 == 0)
             numRes += vect[n1];
     return numRes;
 }
@@ -12,14 +12,14 @@ long itc_sum_even_lst(const vector <long>& vect) {
 long itc_sum_even_part_lst(const vector <long>& vect) {
     long sumNum = 0;
     for (int n1 = 0; n1 < vect.size(); n1++)
-        if ((n1 + 1) % 2 == 0)
+        if (vect[n1] % 2 == 0)
             sumNum += vect[n1];
     return sumNum;
 }
 
 void itc_odd_even_separator_lst(const vector <long>& vect, vector <int>& lst1, vector <int>& lst2) {
     for (int n1 = 0; n1 < vect.size(); n1++) {
-        if ((n1 + 1) % 2 == 0)
+        if (vect[n1] % 2 == 0)
             lst1.push_back(n1);
         else
             lst2.push_back(n1);
