@@ -1,7 +1,7 @@
 #include "middle_list.h"
 
 
-vector <char> itc_strlist(string str) {
+vector <char> itc_strtlist(string str) {
     vector <char> res;
     int n1 = 0;
     while (str[n1] != 0) {
