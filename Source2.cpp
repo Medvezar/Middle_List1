@@ -9,7 +9,7 @@ long itc_sum_even_lst(const vector <long>& vect) {
     return numRes;
 }
 
-long itc_sum_even_part_list(const vector <long>& vect) {
+long itc_sum_even_part_lst(const vector <long>& vect) {
     long sumNum = 0;
     for (int n1 = 0; n1 < vect.size(); n1++)
         if ((n1 + 1) % 2 == 0)
@@ -110,4 +110,4 @@ void itc_pos_neg_analysis_lst(const vector <long>& vect) {
     cout << "sum: " << sumPos << "\tsum: " << sumNeg << endl;
     cout << "mid: " << sumPos / countPos << "\tmid: " << sumNeg / countNeg << endl;
     cout << "nullCount: " << nullCount << endl;
-}
+}                                                                

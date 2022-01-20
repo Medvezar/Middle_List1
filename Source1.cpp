@@ -16,7 +16,8 @@ string itc_join(vector <char> vect, string sep) {
     string res = "";
     for (int n1 = 0; n1 < vect.size(); n1++) {
         res += vect[n1];
-        res += sep;
+        if (n1 != vect.size() - 1)
+            res += sep;
     }
     return res;
 }
