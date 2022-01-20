@@ -24,20 +24,20 @@ long itc_sum_even_part_lst(const vector <int>& vect) {
 void itc_odd_even_separator_lst(const vector <int>& vect, vector <int>& lst1, vector <int>& lst2) {
     for (int n1 = 0; n1 < vect.size(); n1++) {
         if (vect[n1] % 2 == 0)
-            lst1.push_back(n1);
+            lst1.push_back(vect[n1]);
         else
-            lst2.push_back(n1);
+            lst2.push_back(vect[n1]);
     }
 }
 
 void itc_pos_neg_separator_lst(const vector <int>& vect, vector <int>& lst1, vector <int>& lst2, vector <int>& lst3) {
     for (int n1 = 0; n1 < vect.size(); n1++) {
-        if (n1 < 0)
-            lst1.push_back(n1);
-        else if (n1 == 0)
-            lst2.push_back(n1);
+        if (vect[n1] < 0)
+            lst1.push_back(vect[n1]);
+        else if (vect[n1] == 0)
+            lst2.push_back(vect[n1]);
         else
-            lst3.push_back(n1);
+            lst3.push_back(vect[n1]);
     }
 }
 
