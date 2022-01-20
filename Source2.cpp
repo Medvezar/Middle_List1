@@ -1,15 +1,17 @@
 #include "middle_list.h"
 
 
-long itc_sum_even_lst(const vector <long>& vect) {
+long itc_sum_even_lst(const vector <int>& vect) {
     long numRes = 0;
+    if (vect.size() == 0)
+        return 0;
     for (int n1 = 0; n1 < vect.size(); n1++)
         if (n1 % 2 == 0)
             numRes += vect[n1];
     return numRes;
 }
 
-long itc_sum_even_part_lst(const vector <long>& vect) {
+long itc_sum_even_part_lst(const vector <int>& vect) {
     long sumNum = 0;
     for (int n1 = 0; n1 < vect.size(); n1++)
         if (vect[n1] % 2 == 0)
@@ -17,7 +19,7 @@ long itc_sum_even_part_lst(const vector <long>& vect) {
     return sumNum;
 }
 
-void itc_odd_even_separator_lst(const vector <long>& vect, vector <int>& lst1, vector <int>& lst2) {
+void itc_odd_even_separator_lst(const vector <int>& vect, vector <int>& lst1, vector <int>& lst2) {
     for (int n1 = 0; n1 < vect.size(); n1++) {
         if (vect[n1] % 2 == 0)
             lst1.push_back(n1);
@@ -26,7 +28,7 @@ void itc_odd_even_separator_lst(const vector <long>& vect, vector <int>& lst1, v
     }
 }
 
-void itc_pos_neg_separator_lst(const vector <long>& vect, vector <int>& lst1, vector <int>& lst2, vector <int>& lst3) {
+void itc_pos_neg_separator_lst(const vector <int>& vect, vector <int>& lst1, vector <int>& lst2, vector <int>& lst3) {
     for (int n1 = 0; n1 < vect.size(); n1++) {
         if (n1 < 0)
             lst1.push_back(n1);
@@ -38,7 +40,7 @@ void itc_pos_neg_separator_lst(const vector <long>& vect, vector <int>& lst1, ve
 }
 
 
-void itc_odd_even_analysis_lst(const vector <long>& vect) {
+void itc_odd_even_analysis_lst(const vector <int>& vect) {
     long sumEven = 0;
     long sumNotEven = 0;
     int timesEven = 0;
