@@ -77,7 +77,7 @@ void itc_odd_even_analysis_lst(const vector <int>& vect) {
 }
 
 
-void itc_pos_neg_analysis_lst(const vector <long>& vect) {
+void itc_pos_neg_analysis_lst(const vector <int>& vect) {
     long sumPos = 0;
     long sumNeg = 0;
     int countPos = 0;
